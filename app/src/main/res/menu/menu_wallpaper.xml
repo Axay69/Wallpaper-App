@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_share_wallpaper"
+        android:title="Share Wallpaper"
+        android:icon="@drawable/ic_share"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_about_wallpaper"
+        android:title="About wallpaper"
+        android:icon="@drawable/ic_info"
+        app:showAsAction="never" />
+
+</menu>

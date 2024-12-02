@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+<!--    ///////////////////////////////////////////////////-->
+
+    <color name="txt_white">#e0e0e0</color>
+    <color name="bg_white">#e0e0e0</color>
+    <color name="txt_black">#202324</color>
+<!--    <color name="bg_black">#000</color>-->
+    <color name="bg_black">#202324</color>
+    <color name="black_translucent">#80000000</color>
+    <color name="grad_black">#121617</color>
+    <color name="smt_green">#66f980</color>
+    <color name="lavender">#E2D2F9</color>
+    <color name="toolbar_col">#00B499</color>
+
+    <color name="icon_col_light_black">#4a4a4a</color>
+    <color name="icon_col_black">#202324</color>
+    <color name="icon_col_white">#e0e0e0</color>
+
+    <color name="selected_color">@color/icon_col_white</color>
+    <color name="unselected_color">@color/icon_col_white</color>
+
+    <color name="hint_color">@android:color/darker_gray</color>
+
+
+    <color name="edittext_focused">#5CB774</color>
+    <color name="edittext_unfocused">@android:color/darker_gray</color>
+
+        <color name="toolbar_dark">#1C1C1C</color> <!-- Dark toolbar color -->
+        <color name="gray">#808080</color> <!-- Gray for unselected text/icons -->
+    <color name="tab_background">#1E1E1E</color>
+    <color name="tab_indicator">#1E88E5</color>
+    <color name="tab_selected_text">#1E88E5</color>
+    <color name="tab_text">#B0B0B0</color>
+
+
+    <color name="bg_trans_black">#46202324</color>
+
+
+</resources>

@@ -1,0 +1,158 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/toolbar_dark"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/settingsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:textColor="@color/txt_white"
+        android:textSize="24sp"
+        android:layout_marginBottom="24dp"/>
+
+    <RelativeLayout
+        android:id="@+id/wallpaperHistoryButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_below="@+id/settingsTitle"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/wallpaperHistoryLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set As Wallpaper History"
+            android:textColor="@color/txt_white"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/wallpaperHistoryIcon"
+            android:layout_width="24sp"
+            android:layout_height="24sp"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="Wallpaper History"
+            android:src="@drawable/ic_history"
+            app:tint="@color/txt_white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/wallpaperSchedulingButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wallpaperHistoryButton"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/wallpaperSchedulingLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wallpaper Scheduling"
+            android:textColor="@color/txt_white"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/wallpaperSchedulingIcon"
+            android:layout_width="24sp"
+            android:layout_height="24sp"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="Wallpaper Scheduling"
+            android:src="@drawable/ic_calendar"
+            app:tint="@color/txt_white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/aboutUsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wallpaperSchedulingButton"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/aboutUsLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About Us"
+            android:textColor="@color/txt_white"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/aboutUsIcon"
+            android:layout_width="24sp"
+            android:layout_height="24sp"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="About Us"
+            android:src="@drawable/ic_info"
+            app:tint="@color/txt_white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/shareAppButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/aboutUsButton"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/shareAppLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Share App"
+            android:textColor="@color/txt_white"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/shareAppIcon"
+            android:layout_width="24sp"
+            android:layout_height="24sp"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="Share App"
+            android:src="@drawable/ic_share"
+            app:tint="@color/txt_white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/logoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/shareAppButton"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/logoutLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:textColor="@color/txt_white"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/logoutIcon"
+            android:layout_width="24sp"
+            android:layout_height="24sp"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="Logout"
+            android:src="@drawable/ic_logout"
+            app:tint="@color/txt_white" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

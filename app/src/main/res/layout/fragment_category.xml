@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlRecyclerContainerHome"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_black"
+    tools:context=".CategoryFragment">
+
+    <!-- AppBarLayout and Toolbar -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbarLayoutCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarCategory"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/toolbar_dark"
+            app:menu="@menu/category_menu"
+            app:title="Categories"
+            app:titleTextColor="@color/bg_white" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- SwipeRefreshLayout for Categories -->
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayoutCategory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appbarLayoutCategory">
+
+        <!-- NestedScrollView to wrap RecyclerView -->
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedScrollViewCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+
+            <!-- Category RecyclerView -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical"
+                android:clipToPadding="false"
+                tools:listitem="@layout/item_category" />
+
+        </androidx.core.widget.NestedScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <!-- RecyclerView for displaying wallpapers (initially hidden) -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewWallpapers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appbarLayoutCategory"
+        android:visibility="gone"
+        android:clipToPadding="false"
+        tools:listitem="@layout/raw_item_home_wallpaper" />
+</RelativeLayout>

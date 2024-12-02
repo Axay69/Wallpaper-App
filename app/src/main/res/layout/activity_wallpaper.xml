@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/toolbar_dark"
+    tools:context=".WallpaperActivity">
+
+    <!-- Blur Image for Wallpaper -->
+    <ImageView
+        android:id="@+id/imgBlurredWallpaper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.6"
+        android:scaleType="centerCrop" />
+
+    <!-- Main Wallpaper Content (Zoom, Scroll, Slide) -->
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Back Button -->
+    <ImageView
+        android:id="@+id/imgBack"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="36dp"
+        android:background="@color/bg_trans_black"
+        android:padding="8dp"
+        android:src="@drawable/ic_back"
+        app:tint="@color/bg_white" />
+
+    <!-- 3-dot Menu (Info) -->
+    <ImageView
+        android:id="@+id/imgInfoMenu"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:background="@color/bg_trans_black"
+        android:layout_marginTop="36dp"
+        android:layout_marginRight="16dp"
+        android:padding="8dp"
+        android:src="@drawable/ic_more"
+        app:tint="@color/bg_white" />
+
+    <!-- Like Button -->
+    <ImageView
+        android:id="@+id/imgLike"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@color/bg_trans_black"
+        android:layout_above="@+id/imgDownload"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:padding="8dp"
+        android:src="@drawable/ic_like"
+        app:tint="@color/bg_white" />
+
+    <!-- Download Button -->
+    <ImageView
+        android:id="@+id/imgDownload"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/ll1"
+        android:layout_alignParentRight="true"
+        android:background="@color/bg_trans_black"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:padding="8dp"
+        android:src="@drawable/ic_download_2"
+        app:tint="@color/bg_white" />
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16sp"
+        android:layout_marginBottom="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <!-- Preview Button -->
+        <ImageView
+            android:id="@+id/imgPreview"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/bg_trans_black"
+            android:padding="8dp"
+            android:src="@drawable/ic_preview"
+            android:visibility="gone"
+            app:tint="@color/bg_white" />
+
+        <!-- Set as Wallpaper Button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSetAsWallpaper"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bg"
+            android:letterSpacing=".1"
+            android:paddingVertical="17dp"
+            android:text="Set as Wallpaper"
+            android:textAllCaps="false"
+            android:textColor="@color/bg_black"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <!-- Loading Indicator -->
+    <ProgressBar
+        android:id="@+id/loadingIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

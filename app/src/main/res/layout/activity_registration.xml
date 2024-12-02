@@ -1,0 +1,165 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/black_gradient"
+    tools:context=".RegistrationActivity">
+
+    <ImageView
+        android:id="@+id/immRegistrationBg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.4"
+        android:scaleType="centerCrop"
+        android:src="@drawable/wallpaper_gojo" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/txtWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Welcome to Anime Wallpapers"
+            android:textColor="@color/txt_white"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtCreateAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtWelcome"
+            android:layout_marginTop="8dp"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/playwrite_regular"
+            android:text="Create Your Account"
+            android:textColor="@color/txt_white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtUsernameRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtCreateAccount"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/edittext_bg"
+            android:drawableStart="@drawable/ic_user"
+            android:drawablePadding="12dp"
+            android:fontFamily="@font/noto_sans_regular"
+            android:hint="Username"
+            android:inputType="text"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="12dp"
+            android:textColor="@color/txt_white"
+            android:textColorHint="@color/hint_color"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edtEmailIdRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtUsernameRegister"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/edittext_bg"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="12dp"
+            android:fontFamily="@font/noto_sans_regular"
+            android:hint="Email Id"
+            android:inputType="textEmailAddress"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="12dp"
+            android:textColor="@color/txt_white"
+            android:textColorHint="@color/hint_color"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edtPasswordRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtEmailIdRegister"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/edittext_bg"
+            android:drawableStart="@drawable/ic_key"
+            android:drawablePadding="12dp"
+            android:fontFamily="@font/noto_sans_regular"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="12dp"
+            android:textColor="@color/txt_white"
+            android:textColorHint="@color/hint_color"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edtConfPasswordRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtPasswordRegister"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/edittext_bg"
+            android:drawableStart="@drawable/ic_key"
+            android:drawablePadding="12dp"
+            android:fontFamily="@font/noto_sans_regular"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="12dp"
+            android:textColor="@color/txt_white"
+            android:textColorHint="@color/hint_color"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/chkAgreeTerms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtConfPasswordRegister"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/noto_sans_regular"
+            android:text="I agree to the Terms and Conditions"
+            android:textColor="@color/txt_white" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/chkAgreeTerms"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/btn_bg"
+            android:fontFamily="@font/noto_san_semibold"
+            android:paddingVertical="12dp"
+            android:text="Register"
+            android:textAllCaps="false"
+            android:textColor="@color/bg_black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnRegister"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/noto_sans_regular"
+            android:text="Already have an Account? Login"
+            android:textColor="@color/txt_white"
+            android:textSize="15sp" />
+
+        <ProgressBar
+            android:id="@+id/progressBarRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+</RelativeLayout>

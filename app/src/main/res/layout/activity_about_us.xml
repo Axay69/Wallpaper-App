@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/toolbar_dark"
+    tools:context=".AboutUsActivity">
+
+    <!-- App Logo -->
+    <ImageView
+        android:id="@+id/appLogo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/ic_logo"
+        android:scaleType="fitCenter"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"/>
+
+    <!-- App Description -->
+    <TextView
+        android:id="@+id/appDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Anime Wallpaper Hub! Discover and download stunning anime wallpapers to bring your screen to life. Our app offers a wide range of high-definition wallpapers from your favorite anime series, updated regularly."
+        android:textSize="18sp"
+        android:textColor="@color/txt_white"
+        android:textAlignment="textStart"
+        android:layout_below="@id/appLogo"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- Contact Information -->
+    <TextView
+        android:id="@+id/contactInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact Us:\nEmail: contact@animewallpaperhub.com\nPhone: +123 456 7890\nFollow us on social media!"
+        android:textSize="16sp"
+        android:textColor="@color/txt_white"
+        android:layout_below="@id/appDescription"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"/>
+
+</RelativeLayout>

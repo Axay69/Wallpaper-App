@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/black_gradient"
+    tools:context=".LoginActivity">
+
+    <!-- Background Image -->
+    <ImageView
+        android:id="@+id/imgLoginBg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.4"
+        android:scaleType="centerCrop"
+        android:src="@drawable/wallpaper_gojo" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:gravity="center">
+
+        <!-- Welcome Text -->
+        <TextView
+            android:id="@+id/txtWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Welcome Back!"
+            android:textColor="@color/txt_white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Login Prompt Text -->
+        <TextView
+            android:id="@+id/txtLoginPrompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtWelcome"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="24dp"
+            android:fontFamily="@font/playwrite_regular"
+            android:text="Login Here"
+            android:textColor="@color/txt_white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Email Input -->
+        <EditText
+            android:id="@+id/edtEmailIdLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtLoginPrompt"
+            android:background="@drawable/edittext_bg"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="12dp"
+            android:fontFamily="@font/noto_sans_regular"
+            android:hint="Email Id"
+            android:inputType="textEmailAddress"
+            android:paddingHorizontal="14dp"
+            android:paddingVertical="17dp"
+            android:textColor="@color/txt_white"
+            android:textColorHint="@color/hint_color"
+            android:textSize="16sp" />
+
+        <!-- Password Input -->
+        <EditText
+            android:id="@+id/edtPasswordLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtEmailIdLogin"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_bg"
+            android:drawableStart="@drawable/ic_key"
+            android:drawablePadding="12dp"
+            android:fontFamily="@font/noto_sans_regular"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingHorizontal="14dp"
+            android:paddingVertical="17dp"
+            android:textColor="@color/txt_white"
+            android:textColorHint="@color/hint_color"
+            android:textSize="16sp" />
+
+        <!-- Forgot Password Button -->
+        <Button
+            android:id="@+id/btnForgotPasswordLogin"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtPasswordLogin"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/noto_sans_regular"
+            android:text="Forgot Password"
+            android:textAllCaps="false"
+            android:textColor="@color/icon_col_white" />
+
+        <!-- Login Button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnForgotPasswordLogin"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_bg"
+            android:fontFamily="@font/noto_san_semibold"
+            android:paddingVertical="17dp"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="@color/bg_black"
+            android:textStyle="bold" />
+
+        <!-- Sign Up Text -->
+        <TextView
+            android:id="@+id/txtSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnLogin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/noto_sans_regular"
+            android:text="Don't have an Account? Sign Up"
+            android:textColor="@color/txt_white"
+            android:textSize="15sp" />
+
+        <!-- Progress Bar -->
+        <ProgressBar
+            android:id="@+id/progressBarLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+</RelativeLayout>

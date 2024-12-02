@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1068008097665",
+    "project_id": "anime-wallpaper-bc939",
+    "storage_bucket": "anime-wallpaper-bc939.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1068008097665:android:0f99063d7ed37142360a80",
+        "android_client_info": {
+          "package_name": "com.example.animewallpaper"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCM4QSHeV-ZbRkKa7aMhOGRH5aRtR6541o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
